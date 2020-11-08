@@ -19,7 +19,7 @@ function preload(){
   
   bananaImage = loadImage("banana.png");
   rocksImage = loadImage("obstacle.png");
-  goImage = loadImage("gameOver.png")
+  goImage = loadImage("gameOver.png");
   
 }
 
@@ -41,7 +41,7 @@ function setup() {
   rocksGroup = createGroup();
   bananasGroup = createGroup();
   
-  monkey.debug = true;
+//   monkey.debug = true;
   monkey.setCollider("circle",0,0,300);
   
 }
@@ -108,7 +108,7 @@ function bananas(){
   banana.addImage(bananaImage);
   banana.scale = 0.15;
   banana.velocityX = -8;
-  banana.debug = true;
+//   banana.debug = true;
   banana.setCollider("rectangle",0,0,500,250);
   bananasGroup.add(banana);
 }
@@ -125,7 +125,7 @@ function rock(){
   rocks.scale = 0.2;
   rocks.velocityX = -8;
   rocks.lifetime = 90;
-  rocks.debug = true;
+//   rocks.debug = true;
   rocks.setCollider("circle",0,20,200);
   rocksGroup.add(rocks);
 }
